@@ -1,0 +1,132 @@
+h1 
+{
+    color: rgb(112, 179, 255);
+    text-align: center;
+font-style:initial;
+border: 1px white solid;
+border-radius: 15px;
+background-color: black;
+
+}
+
+
+
+
+
+body 
+{
+    background-image:url(heart.jpg);
+    border-image:fill;
+    margin:fill;
+    text-align: center;
+   
+}
+
+body:before{
+    content: "";
+    position: absolute;
+    inset: 40% -60% 0 -60%;
+    opacity: 0.3;
+    pointer-events: none;
+}
+nav{
+    position: relative;
+    z-index: 1;
+}
+nav ul {
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+nav.before .active-element{
+    transform: rotateY(180deg);
+}
+section {
+    display: flex;
+    
+    justify-content: center;
+    align-items:flex-start;
+    width: 100%;
+    height: 100vh;
+    flex-flow: column;
+    background-image:transparent;
+  
+    
+
+}
+.form-group{
+    position: relative;
+    margin: 12px 0;
+}
+.form-group input
+{
+    padding: 8px 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: #acacac solid 2px;
+    background-color: transparent;
+    color: #eee;
+    transition: 0.15s all ease;
+}
+.form-group input:focus {
+    border-color: #eee;
+}
+.form-group input::placeholder{
+    color: transparent;
+}
+.form-group .form-label {
+    position: absolute;
+    top: 9px;
+    left: 0;
+    font-size: 18px;
+    padding: 0 10px;
+    color:rgb(192, 248, 255);
+    pointer-events: none;
+    transition: 0.15s all ease;
+
+}
+.form-group input:focus+.form-label,
+.form-group input:not(:placeholder-shown)+.form-label
+{
+    transform: translate(5px, -22px);
+    background-color: rgb(170, 228, 255);
+    font-size: 14px;
+    color:black;
+    border-radius: 20px;
+    
+}
+.c3
+{
+    font-size: 18px;
+    padding: 0 10px;
+}
+
+button{
+    background-color: black;
+    color: #eee;
+    padding: 20px;
+    border: none;
+
+}
+button:hover{
+    border-width: 2px;
+    border-style: solid;
+    border-color: white;
+
+}
+input[type="button"]{
+    background-color: black;
+    color: #eee;
+    padding: 20px;
+    border: none;
+}
+input[type="button"]:hover{
+    border-width: 2px;
+    border-style: solid;
+    border-color: white;
+
+}
+
