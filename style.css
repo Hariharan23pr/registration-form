@@ -16,8 +16,9 @@ background-color: black;
 body 
 {
     background-image:url(heart.jpg);
-    border-image:fill;
-    margin:fill;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     text-align: center;
    
 }
